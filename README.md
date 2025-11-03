@@ -51,3 +51,9 @@ Change config.ini for current use:
     test_size = 0.2
 
 feature_extraction.py is good for general re-use to extract features for image classifiers training.
+
+    Usage:
+        python feature_extraction.py <input_folder> <output_file>
+    
+    Example:
+        python feature_extraction.py ./data/images ./features/extracted_features.tsv
