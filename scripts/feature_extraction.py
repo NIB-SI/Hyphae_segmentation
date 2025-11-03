@@ -8,9 +8,6 @@ This module extracts a rich set of image features for classification, combining:
 
 Features are computed consistently for both training and inference.
 Can be run standalone to extract and save features to TSV files.
-
-Author: Image Analysis Pipeline
-Date: 2025
 """
 
 import os
