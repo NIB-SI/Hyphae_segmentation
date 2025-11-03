@@ -1,0 +1,56 @@
+======================================================================
+BINARY CLASSIFIER TRAINING REPORT
+======================================================================
+
+Training images: 53
+Features extracted: 286
+Label distribution:
+good         24
+bad          15
+semi_good    14
+Name: count, dtype: int64
+
+BAD DETECTOR
+----------------------------------------------------------------------
+Accuracy: 1.000
+
+Top 10 features:
+intensity_kurtosis             0.029379
+lbp_uniformity                 0.022231
+lbp_entropy                    0.021725
+hessian_s5.0_eig_ratio_mean    0.021242
+struct_s5.0_coherence_mean     0.019675
+thresh_8_round_ratio           0.018725
+struct_s3.5_coherence_mean     0.018440
+struct_s3.5_coherence_std      0.017014
+thresh_8_max_aspect_ratio      0.014670
+lbp_variance                   0.013654
+dtype: float64
+
+SEMI-GOOD DETECTOR
+----------------------------------------------------------------------
+Accuracy: 1.000
+
+Top 10 features:
+log_s5.0_abs_mean              0.039057
+thresh_10_mean_eccentricity    0.038654
+hessian_s5.0_eig1_std          0.033293
+hessian_s3.5_eig1_std          0.027325
+thresh_10_elongated_ratio      0.026894
+hessian_s5.0_eig1_mean         0.025252
+log_s5.0_std                   0.024470
+thresh_10_mean_convexity       0.021200
+struct_s10.0_eig1_max          0.021191
+thresh_10_elongated_objects    0.020202
+dtype: float64
+
+COMBINED CLASSIFIER
+----------------------------------------------------------------------
+Overall Training Accuracy: 1.000
+
+Confusion Matrix:
+Predicted  bad  good  semi_good
+True                           
+bad         15     0          0
+good         0    24          0
+semi_good    0     0         14
